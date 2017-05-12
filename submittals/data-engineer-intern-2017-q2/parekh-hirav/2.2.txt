@@ -1,0 +1,13 @@
+Solution:
+
+To generate a random number between 1 -7 using just one 6-side die is to roll the die twice to get one random number.  There are 36 different possible outcomes when the die is rolled twice:
+
+  (1,1), (1,2)... . (1,6)
+  (2,1), (2,2) ..., (2,6)
+  …
+  …
+  (6,1),(6,2),.....,(6,6)
+
+Now if we want to generate just any random number and if this random generator is not required to be a uniform random generator then we can map these 36 different outcomes to numbers from 1 to 7. In this case one of the seven numbers will be assigned 6 different outcomes and other numbers will be assigned 5 outcomes which will result in non uniform random generator.
+
+If we want a uniform random generator then we can assign 5 different outcomes to each number and lets say not assign (6,6) to any of the numbers. So if we get a (6,6) we can just re-roll the die again until we don’t get a (6,6)
