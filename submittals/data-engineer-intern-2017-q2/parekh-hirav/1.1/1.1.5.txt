@@ -1,0 +1,51 @@
+Optimizations
+
+For the recursive solution (1.1.1) the function computes all the previous values from F(n-1) to F(1) for each F(n) which results in time complexity of O(n). One way to avoid this would be to store the values of F(n) as they are computed and have that data available so that the function doesn’t need to compute previous values every time.
+
+In python that can be done as follows
+
+def memoize(fun):
+    store = dict()
+    def checknstore(n):
+        if n not in store:
+            store[n] = fun(n)
+        return store[n]
+
+   return checknstore
+
+#Function definition for recursive solution
+@memoize
+def fibonacci(n):
+    
+    if n<=2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+
+n = int(input("Please Enter a number: "))
+print(fibonacci(n))
+
+This method would reduce the time complexity to O(n) but would still need storage space.
+
+Another optimization would be to use generator function instead of normal function used in 1.1.3 non recursive implementation as shown below
+
+#Alternative implementation - non recursive solution
+#Function definition
+def fibonacci2(n):   
+    current = 1
+    previous = 0
+    initial = 1
+    while (initial < n):
+            current, previous, initial = current+previous, current, initial+1
+    yield current
+    
+n = int(input("Please Enter a number: "))
+for f in fibonacci2(n):
+    print(f)
+
+
+
+
+
+
