@@ -33,7 +33,7 @@ We're going to leverage typical analysis and development workflows used by our t
 ### 0. Configure exam params:
 Define a few parameters used throughout the exam:
 - `your-gh-username`: your [GitHub username](https://help.github.com/articles/remembering-your-github-username-or-email/).
-- `ds-position`: the title of the position you're applying to, specified in the email you recieved (e.g., `data-engineer-2017-q2`, `data-scientist-intern-2017-q3`)
+- `ds-position`: the title of the position you're applying to, specified in the email you recieved (e.g., `data-engineer-2019-q2`, `data-scientist-intern-2019-spring`)
 - `mylastname-myfirstname`: your name, backwards of course!
 
 If you're a POSIX shell user (e.g., linux or osx), you can set these params via environment variables so future commands won't have to be manually modified!
