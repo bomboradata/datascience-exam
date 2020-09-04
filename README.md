@@ -22,9 +22,9 @@ Thank you so much! Now, get comfortable and let's go!
 ## Overview
 We're going to leverage typical analysis and development workflows used by our team to conduct an interview exam. In short, you'll:
 
-- clone this repo and setup a working directory
-- open the exam Jupyter notebook in an [POSIX environment](https://en.wikipedia.org/wiki/POSIX) of your choice (web or local), using a language (kernel) of your choice (you can choose between Scala, R, Haskell, Ruby, Python 2/3, Julia or even Bash)
-- answer three questions of your choice
+- fork this repository and setup a working directory on your machine
+- open the exam Jupyter notebook in an [POSIX environment](https://en.wikipedia.org/wiki/POSIX) of your choice (web or local), using a language (kernel) of your choice (you can choose between Scala, R, Haskell, Ruby, Python 2/3, Julia, Octave or even Bash)
+- answer three questions of your choice, one from each section
 - add, commit, and push your solution + resume (and other docs, if you wish) to your remote repo
 - send us completed exam submittal via a [pull request PR](https://help.github.com/articles/about-pull-requests/)
 
